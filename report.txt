@@ -1,0 +1,84 @@
+Starting diagnostics at 2025-12-25 11:47:06
+
+===== System Information =====
+Operating System: Linux
+Platform: Linux-6.6.99-08726-g28eab9a1f61e-x86_64-with-glibc2.36
+Architecture: ('64bit', 'ELF')
+Machine: x86_64
+Processor: 
+WARNING: psutil module not found. Cannot determine RAM information.
+Free Disk Space: 5.39 GB
+
+===== File System Information =====
+Current Directory: /home/shaikrafi7/agents
+Write permission: OK
+
+Files in Parent Directory:
+ - .Xauthority
+ - .bash_history
+ - .bash_logout
+ - .bashrc
+ - .cache
+ - .config
+ - .dotnet
+ - .gitconfig
+ - .ipython
+ - .lesshst
+ - .local
+ - .pki
+ - .profile
+ - .python-version
+ - .python_history
+ - .sommelierrc
+ - .streamlit
+ - .sudo_as_admin_successful
+ - .vscode
+ - .zshrc
+ - agents
+ - test_env
+
+===== Git Repository Information =====
+Git Repository Root: /home/shaikrafi7/agents
+Current Commit: b81c8d09921c19f197afe7004d9443c962bc2098
+Remote Origin: https://github.com/ed-donner/agents.git
+
+===== Environment File Check =====
+.env file exists at: /home/shaikrafi7/agents/.env
+WARNING: OPENAI_API_KEY not found in .env file
+
+===== Virtualenv Check =====
+ERROR: Virtualenv check failed: expected str, bytes or os.PathLike object, not NoneType
+
+===== Network Connectivity Check =====
+SSL Version: OpenSSL 3.5.4 30 Sep 2025
+ERROR: Required packages are not installed. Please install them using 'pip install requests speedtest-cli'
+
+===== Environment Variables Check =====
+
+PYTHONPATH is not set, as expected.
+
+Python sys.path:
+ - /home/shaikrafi7/agents/setup
+ - /home/shaikrafi7/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python314.zip
+ - /home/shaikrafi7/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14
+ - /home/shaikrafi7/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/lib-dynload
+ - /home/shaikrafi7/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/site-packages
+ERROR: Environment variables check failed: No module named 'dotenv'
+
+===== Additional Diagnostics =====
+Temp directory is writable: /tmp
+
+===== Warnings Found =====
+The following warnings were detected. They might not prevent the program from running but could cause unexpected behavior:
+- psutil module not found. Cannot determine RAM information.
+- OPENAI_API_KEY not found in .env file
+
+===== Errors Found =====
+The following critical issues were detected. Please address them before proceeding:
+- Virtualenv check failed: expected str, bytes or os.PathLike object, not NoneType
+- Required packages are not installed. Please install them using 'pip install requests speedtest-cli'
+- Environment variables check failed: No module named 'dotenv'
+
+
+Completed diagnostics at 2025-12-25 11:47:11
+
